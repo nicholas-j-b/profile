@@ -1,3 +1,4 @@
+import { NavigationService } from './../../../service/navigation.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -9,9 +10,15 @@ export class NavBarItemComponent implements OnInit {
 
   @Input() pageName: string;
 
-  constructor() { }
+  constructor(
+    private readonly navigationService: NavigationService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public navigateTo(): void {
+    this.navigationService.navigateToPage(this.pageName);
   }
 
 }
