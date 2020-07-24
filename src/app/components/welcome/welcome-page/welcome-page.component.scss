@@ -11,15 +11,15 @@
 .grid {
     display: grid;
     grid-template-columns: 38vw auto;
-    grid-template-rows: 38vh auto;
+    grid-template-rows: 31vh auto;
     grid-template-areas: 
-        "profile-pic navbar"
+        "portrait-box navbar"
         "empty empty"
     ;
 }
 
-.profile-pic {
-    grid-area: profile-pic;
+.portrait-box {
+    grid-area: portrait-box;
 }
 
 .nav-bar {
@@ -32,14 +32,23 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    vertical-align: middle;
 }
 
 .portrait {
-    height: 60%;
+    height: 80%;
     transition: all .05s ease-in-out;
 }
 
 .portrait:hover {
     transform: scale(1.14);
+}
+
+.nav-bar-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    height: 24%;
+    width: 90%;
 }

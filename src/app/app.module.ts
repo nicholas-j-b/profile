@@ -8,6 +8,8 @@ import { ProjectsPageComponent } from './components/projects/projects-page/proje
 import { AboutPageComponent } from './components/about/about-page/about-page.component';
 import { ProfessionalPageComponent } from './components/professional/professional-page/professional-page.component';
 import { HobbyPageComponent } from './components/hobby/hobby-page/hobby-page.component';
+import { NavBarComponent } from './components/nav/nav-bar/nav-bar.component';
+import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HobbyPageComponent } from './components/hobby/hobby-page/hobby-page.com
     ProjectsPageComponent,
     AboutPageComponent,
     ProfessionalPageComponent,
-    HobbyPageComponent
+    HobbyPageComponent,
+    NavBarComponent,
+    NavBarItemComponent
   ],
   imports: [
     BrowserModule,
