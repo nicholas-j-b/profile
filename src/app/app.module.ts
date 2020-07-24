@@ -11,6 +11,7 @@ import { HobbyPageComponent } from './components/hobby/hobby-page/hobby-page.com
 import { NavBarComponent } from './components/nav/nav-bar/nav-bar.component';
 import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.component';
 import { NavHeaderComponent } from './components/nav/nav-header/nav-header.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { NavHeaderComponent } from './components/nav/nav-header/nav-header.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
