@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavBarItemComponent implements OnInit {
 
   @Input() pageName: string;
+  @Input() selected: boolean;
 
   constructor(
     private readonly navigationService: NavigationService

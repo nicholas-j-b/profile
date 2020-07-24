@@ -10,6 +10,7 @@ import { ProfessionalPageComponent } from './components/professional/professiona
 import { HobbyPageComponent } from './components/hobby/hobby-page/hobby-page.component';
 import { NavBarComponent } from './components/nav/nav-bar/nav-bar.component';
 import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.component';
+import { NavHeaderComponent } from './components/nav/nav-header/nav-header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.
     ProfessionalPageComponent,
     HobbyPageComponent,
     NavBarComponent,
-    NavBarItemComponent
+    NavBarItemComponent,
+    NavHeaderComponent,
   ],
   imports: [
     BrowserModule,

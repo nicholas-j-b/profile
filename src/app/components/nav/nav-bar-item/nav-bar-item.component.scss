@@ -1,12 +1,17 @@
+@import '../../../../styles/colours.scss';
+
 .nav-item {
     height: 100%;
     width: 100%;
     transition: all .05s ease-in-out;
+    background-color: $primary-light;
+    border: solid 2px $primary-dark;
 }
 
 .nav-item:hover {
     cursor: pointer;
     transform: scale(1.03);
+    background-color: $bright;
 }
 
 .text-wrapper {
@@ -15,10 +20,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dfe3ee;
-    border: solid 2px #576daa;
 }
 
 .text {
     user-select: none;
+}
+
+.selected {
+    background-color: $yellow;
+}
+
+.selected:hover {
+    transform: scale(1);
+    background-color: $yellow;
 }
