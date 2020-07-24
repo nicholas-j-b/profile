@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
     'About',
     'Professional',
     'Projects',
-    'Hobbies'
+    'Hobby'
   ]
 
   constructor() { }
