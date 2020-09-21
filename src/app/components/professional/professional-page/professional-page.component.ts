@@ -1,3 +1,4 @@
+import { EnglishText } from '../../../../assets/text/englishText';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalPageComponent implements OnInit {
 
-  constructor() { }
+  public content = [
+    {
+      name: 'Crime Runners',
+      text: EnglishText.crimeText
+    },
+    {
+      name: 'Cloudflight',
+      text: EnglishText.cloudText
+    }
+  ];
+
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

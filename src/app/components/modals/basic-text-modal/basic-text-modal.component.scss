@@ -1,0 +1,28 @@
+@import 'colours';
+@import 'fonts';
+
+.modal-title {
+    width: 100%;
+    font-size: large;
+    margin: 0;
+    text-align: center;
+}
+
+.text-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.text {
+    white-space: pre-wrap;
+    margin: 0 10px;
+    color: $pine-tree;
+}
+
+.close {
+    font-family: $main-font;
+    color: $pine-tree;
+}
+

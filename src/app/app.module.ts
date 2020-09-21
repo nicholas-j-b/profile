@@ -12,6 +12,10 @@ import { NavBarComponent } from './components/nav/nav-bar/nav-bar.component';
 import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.component';
 import { NavHeaderComponent } from './components/nav/nav-header/nav-header.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { ButtonBannerComponent } from './components/containers/banners/button-banner/button-banner.component';
+import { ButtonBannerContainerComponent } from './components/containers/banners/button-banner-container/button-banner-container.component';
+import { BasicTextModalComponent } from './components/modals/basic-text-modal/basic-text-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,12 +28,16 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     NavBarComponent,
     NavBarItemComponent,
     NavHeaderComponent,
+    ButtonBannerComponent,
+    ButtonBannerContainerComponent,
+    BasicTextModalComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
