@@ -10,6 +10,13 @@ import { ProfessionalPageComponent } from './components/professional/professiona
 import { HobbyPageComponent } from './components/hobby/hobby-page/hobby-page.component';
 import { NavBarComponent } from './components/nav/nav-bar/nav-bar.component';
 import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.component';
+import { NavHeaderComponent } from './components/nav/nav-header/nav-header.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { ButtonBannerComponent } from './components/containers/banners/button-banner/button-banner.component';
+import { ButtonBannerContainerComponent } from './components/containers/banners/button-banner-container/button-banner-container.component';
+import { BasicTextModalComponent } from './components/modals/basic-text-modal/basic-text-modal.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -20,13 +27,19 @@ import { NavBarItemComponent } from './components/nav/nav-bar-item/nav-bar-item.
     ProfessionalPageComponent,
     HobbyPageComponent,
     NavBarComponent,
-    NavBarItemComponent
+    NavBarItemComponent,
+    NavHeaderComponent,
+    ButtonBannerComponent,
+    ButtonBannerContainerComponent,
+    BasicTextModalComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ClickOutsideModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

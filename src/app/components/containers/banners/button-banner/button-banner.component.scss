@@ -1,17 +1,19 @@
+// @import '../../../../../styles/colours.scss';
 @import 'colours.scss';
 
-.nav-item {
-    height: 100%;
+.button-banner {
+    height: 20vh;
     width: 100%;
     transition: all .05s ease-in-out;
-    background-color: $ghost-white;
+    background-color: white;
     border: solid 2px $blue-yonder;
+    margin-top: 10%;
 }
 
-.nav-item:hover {
+.button-banner:hover {
     cursor: pointer;
     transform: scale(1.03);
-    background-color: white;
+    background-color: $deep-champagne;
 }
 
 .text-wrapper {
@@ -24,13 +26,5 @@
 
 .text {
     user-select: none;
-}
-
-.selected {
-    background-color: $bisque;
-}
-
-.selected:hover {
-    transform: scale(1);
-    background-color: $bisque;
+    font-size: xx-large;
 }

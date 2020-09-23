@@ -1,0 +1,22 @@
+.page {
+    display: grid;
+    grid-template-rows: 12vh 88vh;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/assets/images/thinkpad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.nav-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav-bar {
+    height: 40%;
+    width: 98%;
+}
