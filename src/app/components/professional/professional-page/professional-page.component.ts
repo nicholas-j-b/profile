@@ -10,11 +10,11 @@ export class ProfessionalPageComponent implements OnInit {
 
   public content = [
     {
-      name: 'Crime Runners',
-      text: EnglishText.crimeText
+      name: 'IoT Engineer',
+      text: EnglishText.crimeText,
     },
     {
-      name: 'Cloudflight',
+      name: 'Software Engineer',
       text: EnglishText.cloudText
     }
   ];

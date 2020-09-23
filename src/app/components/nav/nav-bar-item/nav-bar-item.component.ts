@@ -1,4 +1,4 @@
-import { NavigationService } from './../../../service/navigation.service';
+import { NavigationService } from './../../../service/navigation/navigation.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

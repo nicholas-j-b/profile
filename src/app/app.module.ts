@@ -16,6 +16,7 @@ import { ButtonBannerComponent } from './components/containers/banners/button-ba
 import { ButtonBannerContainerComponent } from './components/containers/banners/button-banner-container/button-banner-container.component';
 import { BasicTextModalComponent } from './components/modals/basic-text-modal/basic-text-modal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ClickOutsideModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],

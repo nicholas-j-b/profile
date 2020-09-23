@@ -2,7 +2,8 @@
     <div class="banner-column">
 
         <div *ngFor="let content of content">
-            <app-button-banner [content]="content"></app-button-banner>
+            <app-button-banner [content]="content" (openModal)="openModal($event)"></app-button-banner>
         </div>
+        <app-basic-text-modal [content]="content" (closeModal)="closeModal($event)"></app-basic-text-modal>
     </div>
 </div>
